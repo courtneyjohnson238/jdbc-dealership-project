@@ -14,6 +14,8 @@ public class InventoryDao {
 
     public void addVehicleToInventory(String vin, int dealershipId) {
         // TODO: Implement the logic to add a vehicle to the inventory
+        // SQL query to insert a new vehicle into the vehicle table
+        String query = "insert into vehicles (vin, dealershipId) values (?,?);";
     }
 
     public void removeVehicleFromInventory(String vin) {
